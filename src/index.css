@@ -1,0 +1,97 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.gradientBg {
+    background: rgb(34,0,36);
+background: linear-gradient(360deg, rgba(34,0,36,1) 3%, rgba(34,0,36,1)24%,  rgba(3,2,53,1) 100%);
+}
+
+.gradientText{
+    background: #5A00F8;
+background: -webkit-linear-gradient(to right, #5A00F8 0%, #EF29A6 70%);
+background: -moz-linear-gradient(to right, #5A00F8 0%, #EF29A6 70%);
+background: linear-gradient(to right, #5A00F8 0%, #EF29A6 70%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.market-top-content{
+    border-radius: 8px 8px 0 0;
+}
+
+.coin-details{
+    border-bottom: 2px solid white;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.coin-details:hover{
+    background-color: purple;
+}
+
+.centeredFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    margin-left: 16px;
+    transition: all 0.1s linear;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pagination-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.coinFloat{
+animation: move 2s infinite;
+}
+
+.chartBtns:hover{
+background-color: rgb(193, 13, 193);
+cursor: pointer;
+transition: all 0.3s linear;
+}
+
+@keyframes move {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px) ;
+    }
+  }
